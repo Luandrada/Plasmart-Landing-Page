@@ -1,0 +1,361 @@
+$color-dorado:#dc9e40;
+$color-sec-gris: #373737;
+$color-sec-bordo:#442211;
+$color-sec-marron:#5f4621;
+
+$fte-sec: 'Poppins', sans-serif;
+$fte-ppal:'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    &:link{
+        text-decoration: none;
+    }
+    &:visited{
+        text-decoration: none;
+    }
+}
+header{
+    background-color:$color-sec-bordo;
+    height: 90px;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .cont-img-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            
+            img{
+                margin-top: -40px;
+                width: 250px;
+                height: 70px;
+            }
+        }
+        .cont-icon-menu{
+            display: none;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+    .nav-options{
+        height: 100%;
+        
+        .nav-redes{
+            position: absolute;
+            right: 60px;
+            top: 13px;
+            width: 80px;
+            .icons{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .fab, .fas{
+                    color: $color-dorado;
+                    font-size: 1.1em;
+                    &:hover{
+                        cursor: [pointer];
+                        color: #fff;
+                        opacity: 0.9;
+                    }
+                }
+            }
+            
+        }
+        .nav-cont{
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 0px;
+            right: 60px;
+            .menu{
+                margin-bottom: 0px;
+                display: flex;
+                justify-content: space-between;
+                width: 30vw;
+                li{
+                    list-style: none;
+                    color: $color-dorado;
+                    a{
+                        text-decoration: none;
+                        font-family: $fte-sec;
+                         color: #fff;
+                         font-size: 18px;
+                         letter-spacing: 1px;
+                        &:visited{
+                            text-decoration: none;
+                        }
+                        &:link{
+                            text-decoration: none;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.sec-productos2{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    .contenedor{
+        height: 100%;
+        .columna{
+            padding: 18px 9px;
+            .tarjeta{
+                background-color:black;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                .img{
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    .bg{
+                        width: 100%;
+                        height: 100%;
+                        background-color:#442211a8;
+                        // background-color: rgba(0, 0, 0, 0.705);                        
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: $fte-sec;
+                        h3{
+                            letter-spacing: 2px;
+                            text-align: center;
+                            
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                   
+                }
+                #img1{
+                    background-image: url(../img/carteleria/IMG-20210114-WA0012.jpg);
+                    background-position: center center;
+                    // clip-path: polygon(0% 0%, 100% 4%, 98% 100%, 0% 100%);
+                }
+                #img2{
+                    background-image: url(../img/cerramientos-aberturas/abertura1.jpg);
+                    // clip-path: polygon(0% 1%, 98% 6%, 100% 97%, 0% 100%);
+                }
+                #img3{
+                    background-image: url(../img/chapa-gruesa/chapa.jpg) ;
+                    background-position: center center;
+                    // clip-path: polygon(0% 9%, 100% 0%, 98% 100%, 2% 95%);
+                }
+                #img4{
+                    background-image: url(../img/barandas/baranda1.jpg);
+                    background-position: center center;
+                    // clip-path: polygon(2% 0%, 98% 0%, 100% 95%, 0% 100%);
+                }
+                #img5{
+                    
+                    background-image: url(../img/panos/plano2.jpg) ;
+                    background-position: center;
+                    // clip-path: polygon(0% 1%, 97% 3%, 100% 100%, 0% 97%);
+                }
+                #img6{
+                    background-image: url(../img/pergolas/pergola4.jpg);
+                    background-position: top;
+                    // clip-path: polygon(3% 0%, 95% 0%, 100% 100%, 0% 100%);
+                }
+                #img7{
+                    background-image: url(../img/frentes/frente2.jpg);
+                    background-position: center;
+                    // clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 5% 100%);
+                }
+            }
+            .tarj1{
+                height: 43%;
+                margin-bottom: 3%;
+            }
+            .tarj2{
+                height: 55%;
+                margin-top: 2%;
+                // width: 95%;
+            }
+            .tarj3{
+                height: 22%;
+                margin-bottom: 2%;
+            }
+            .tarj4{
+                height: 33%;
+                margin-bottom: 2%;
+            }
+            .tarj5{
+                height: 42%;
+            }
+            .tarj6{
+                height: 63%;
+                margin-bottom: 2%;
+                // width: 95%;
+            }
+            .tarj7{
+                height: 36%;
+                margin-top: 2%;
+            }
+        }
+    }
+    .bg-galeria{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.87);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        .container{
+            .encabezado-galeria{
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid $color-sec-gris;
+                justify-content: space-between;
+                .fa-times{
+                    color: #fff;
+                    font-size: 1.3em;
+                    &:hover{
+                        color: $color-dorado;
+                    }
+                }
+                h2{
+                    font-family: $fte-ppal;
+                    color: #fff;
+                    .fas{
+                        margin-right: 6px;
+                        font-size: 0.7em;
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.tienda-flot{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color:rgba(0, 0, 0, 0.76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    right: 30px;
+    bottom: 20px;
+        .fas{
+            font-size: 1.7em;
+            margin-left: -5px;
+            color: $color-dorado;
+        }
+}
+
+ ///// menu hamburguesa
+ @media only screen and (max-width: 767px){
+    .nav-cont{
+      display: none;
+      .navbar-nav{
+          display: flex !important;
+          justify-content: space-between !important;
+          width: 100%;
+          align-items: center;
+          position: relative;
+          z-index: 100;
+          top: 80px;
+          left: 0;
+          margin-left: 0px !important;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          background-color: #fff;
+          border-top: 4px solid var(--light-blue-x3);
+          .nav-item{
+            background-color:#fff;
+            margin-left: 0px !important;
+              .nav-link{
+                  color: black !important;
+                  font-size: 19px;
+                  color: var(--blue-primary);
+                  font-family: 'monstserrat light 0';
+                  background-color: #fff;
+                  display: block;
+                  margin-bottom: 0px;
+                  margin-top: -1px;
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  text-align: center;
+                  width: 100vw;
+                  margin-left: 0px !important;
+                 
+              }
+              .underline{
+                display: none
+              }
+          }
+          #barra5{
+            padding-bottom: 40px;
+          }
+          
+      }
+    }
+  
+    .cont-img-menu{
+      width: 100%;
+      min-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .navbar-brand{
+        img{
+          width: 135px;
+          height: 45px;
+          margin-left: -30px;
+        }
+      }
+      .cont-icon-menu{
+        .fa-bars{
+          display: block ;
+          color: var(--light-blue-x2);
+          font-size: 1.2em;
+        
+        }
+        .fa-times{
+          display: none;
+          color: var(--light-blue-x2);
+          font-size: 1.2em;
+        }
+      }
+    }
+  
+  }
+   ///para el icono hamburguesa
+   @media only screen and (min-width: 768px) {
+    .cont-icon-menu{
+      display: none !important;
+    }
+   }
+   ////////////FIN MENU HAMBURGUESa

@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- SEO -->
+    <meta name="description" content="Trabajos artísticos en chapa para uso arquitectónico o decorativo. Productos estandar y a medida. Chapa calada en variados diseños.Córdoba, Argentina.">
+    <meta name="keywords" content="chapa">
+    <meta name="keywords" content="chapa calada">
+    <meta name="keywords" content="diseños en chapa">
+    <meta name="keywords" content="chapa calada artistica">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
     <!-- Styles CSS -->
@@ -31,13 +36,14 @@
             <a class="logo" style="margin-left: 40px; margin-top: 45px;" href="">
                 <img id="logo1" src="img/logos/logo-horizontal.png" width="200px" height="55px" alt="">
             </a>
-            <div class="cont-icon-menu">
-                <i class="fas fa-bars" id="menu"></i>
-                <i class="fas fa-times" id="close"></i>
-                <i class="fas fa-shopping-cart"></i>
+            <div class="cont-icon-menu d-flex ">
+                <i class="fas fa-shopping-cart d-md-none"></i>
+                <i class="fas fa-bars  d-md-none" id="menu" onClick="abrirMenu()"></i>
+                <i class="fas fa-times " id="close" onClick="cerrarMenu()"></i>
+                
             </div>
         </div>
-        <div class="nav-options" id="navbarSupportedContent">
+        <div class="nav-options  d-md-flex" id="navbarSupportedContent">
             <div class="d-none d-sm-none d-md-block nav-redes">
                 <div class="icons">
                     <a href="https://www.facebook.com/wantfrom" target="_blank"><i
@@ -49,20 +55,19 @@
                 </div>
 
             </div>
-            <div class=" nav-cont" id="contenido-menu">
+            <div class=" nav-cont d-md-block " id="contenido-menu">
                 <ul class="menu">
-
-                    <li class="nav-item" id="barra2">
+                    <li class="nav-item" id="barra2" onmouseover="efectoSubrayado(1)" onmouseout="quitarSubrayado(1) ">
                         <a class="nav-link text-light" href="#Tu-Tienda">PRODUCTOS</a>
-                        <span class="underline"></span>
+                        <span class="underline" id="line1"></span>
                     </li>
-                    <li class="nav-item" id="barra3">
+                    <li class="nav-item" id="barra3" onmouseover="efectoSubrayado(2)" onmouseout="quitarSubrayado(2) ">
                         <a class="nav-link text-light" href="#Licencias">TECNOLOGÍAS</a>
-                        <span class="underline"></span>
+                        <span class="underline" id="line2"></span>
                     </li>
-                    <li class="nav-item" id="barra4">
+                    <li class="nav-item" id="barra4" onmouseover="efectoSubrayado(3)" onmouseout="quitarSubrayado(3) ">
                         <a class="nav-link text-light" href="#FAQ">CONTACTO</a>
-                        <span class="underline"></span>
+                        <span class="underline" id="line3"></span>
                     </li>
                 </ul>
             </div>
@@ -71,89 +76,106 @@
     </header>
     <!-- FIN HEADER -->
     <!-- SECCION PRODUCTOS -->
-    <section class="sec-productos2 container-fluid">
-        <div class="row contenedor">
-            <div class="col columna">
-                <div class="row tarjeta tarj1">
-                    <div class="img " id="img1">
+    <section class="sec-productos container-fluid">
+        <div class="contenedor">
+            <div class="row renglon">
+                <div class="col-md-7 tarjeta" >
+                    <div class="img" id="img1">
                         <div class="bg">
-                            <h3 onClick="abrirGaleria()">CARTELERÍA</h3>
+                            <h3 onClick="abrirGaleria()">DISEÑO</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
-                <div class="row tarjeta tarj2">
+                <div class="col-md-5 tarjeta"  >
                     <div class="img" id="img2">
                         <div class="bg">
-                            <h3>CERRAMIENTOS Y ABERTURAS</h3>
-                            <p>Ver en Tienda</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col columna ">
-                <div class="row tarjeta tarj3">
-                    <div class="img" id="img3">
-                        <div class="bg">
-
                             <h3>CHAPA GRUESA</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
-                <div class="row tarjeta tarj4">
+            </div>
+            <div class="row renglon renglon2 ">
+                <div class="col-md-5 tarjeta">
+                    <div class="img" id="img3">
+                        <div class="bg">
+                            <h3>OTROS</h3>
+                            <p>Ver en Tienda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 tarjeta">
                     <div class="img" id="img4">
                         <div class="bg">
-
-                            <h3>BARANDAS</h3>
-                            <p>Ver en Tienda</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tarjeta tarj5">
-                    <div class="img" id="img5">
-                        <div class="bg">
-                            <h3>PAÑOS</h3>
-                            <p>Ver en Tienda</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col columna">
-                <div class="row tarjeta tarj6">
-                    <div class="img" id="img6">
-                        <div class="bg">
-
-                            <h3>PÉRGOLAS</h3>
-                            <p>Ver en Tienda</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tarjeta tarj7">
-                    <div class="img" id="img7">
-                        <div class="bg">
-
-                            <h3>FRENTES</h3>
+                            <h3>ARQUITECTURA</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="bg-galeria" id="bg-galeria">
-            <div class="container">
-                <div class="encabezado-galeria">
-                    <h2><i class="fas fa-images"></i>  CARTELERÍA</h2>
+            <div class="container1">
+                <div class="encabezado-galeria d-flex justify-content-between align-items-center">
+                    <h2><i class="fas fa-images"></i> DISEÑO</h2>
                     <i class="fas fa-times" onClick="cerrarGaleria()"></i>
                 </div>
+                <div class="container cont-galeria">
+                    <div class="row">
+                        <div class="col col-md-6  left d-flex justify-content-center align-items-center">
+                            <div class="cont-img">
 
+                            </div>
+                        </div>
+                        <div class=" col col-md-6 right">
+                            <div class="row top">
+                                <div class="cont-texto">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque optio placeat,
+                                        non ab ipsa delectus accusamus sit molestias officiis dolorum eum
+                                        exercitationem?<br> Suscipit minima modi, sunt facere quas tempora labore? Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis sunt
+                                        consectetur autem similique quas! Ex porro quam ducimus, reprehenderit
+                                        temporibus mollitia accusantium, aut ullam nisi illo officia, in sint!</p>
+                                </div>
+                            </div>
+                            <div class="row  bottom  ">
+                                <div class="cont-fotos d-flex justify-content-around align-items-center">
+                                    <div class=" col col-md-3 img-sec" >
+                                        <div class="img"  id="img2">
+
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
+                                        <div id="img3" class="img"></div>
+
+                                    </div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
+                                        <div id="img4" class="img"></div>
+
+                                    </div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
+    
+                                        <div id="img5" class="img"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
 
         </div>
     </section>
-   
 
-   
+
+
 
     <!-- FIN SECCION PRODUCTOS -->
     <!-- TIENDA FLOTANTE  -->

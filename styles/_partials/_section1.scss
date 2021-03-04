@@ -1,0 +1,344 @@
+@import "variables";
+
+.sec-productos{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    .contenedor{
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        .renglon{
+            height: 50%;
+            .tarjeta{
+                height: 100%;
+                padding: 20px;
+                .img{
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    .bg{
+                        width: 100%;
+                        height: 100%;
+                        // background-color:#442211a8;
+                         background-color: rgba(0, 0, 0, 0.705);                        
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: $fte-sec;
+                        h3{
+                            letter-spacing: 2px;
+                            text-align: center;
+                            
+                            &:hover{
+                                cursor: pointer;
+                                transform: scale(1.1);
+                            }
+                        }
+                        p{
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                   
+                }
+                #img1{
+                    background-image: url(../img/carteleria/IMG-20210114-WA0012.jpg);
+                    background-position: center center;
+                    animation-name: imgEntrada;
+                    animation-duration: 2.3s;
+                }
+                #img2{
+                    background-image: url(../img/chapa-gruesa/chapa.jpg);
+                    background-position: center center;
+                    animation-name: imgEntrada;
+                    animation-duration: 1.4s;
+                }
+                #img3{
+                    background-image: url(../img/cerramientos-aberturas/aberturas3.jpg);
+                    background-position: 50% 25%;
+                    animation-name: imgEntrada;
+                    animation-duration: 2s;
+                }
+                #img4{
+                    background-image: url(../img/barandas/baranda1.jpg);
+                    background-position: 25% 58%;
+                    animation-name: imgEntrada;
+                    animation-duration: 1s;
+                    
+                }
+               
+            }
+        }
+    }
+    
+    
+    .bg-galeria{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.87);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        .container1{
+            .encabezado-galeria{
+                margin-top: 30px;
+                width: 86%;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom: 2px solid $color-sec-gris;
+                .fa-times{
+                    color: #fff;
+                    font-size: 1.3em;
+                    &:hover{
+                        color: $color-dorado;
+                    }
+                }
+                h2{
+                    font-family: $fte-ppal;
+                    color: #fff;
+                    .fas{
+                        margin-right: 6px;
+                        font-size: 0.7em;
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+            .cont-galeria{
+                width: 100%;
+                height: 100%;
+                margin-top: 30px;
+                .col{
+                    padding: 20px;
+                    height: fit-content;
+                    .cont-img{
+                        border: 1px solid grey;
+                        width: 80%;
+                        height: 75vh;
+                    }
+                    .row{
+                        height: 38vh;
+                    }
+                    .top{
+                        .cont-texto{
+                            border: 1px solid $color-sec-marron;
+                            border-radius: 8px;
+                            padding: 35px 25px 30px 25px;
+                            height: fit-content;
+                            p{
+                                color: rgba(255, 255, 255, 0.76);
+                                font-family: $fte-sec;
+                                text-align: justify;
+                                // text-transform: uppercase;
+                            }
+                        }
+                    }
+                    .bottom{
+                        .cont-fotos{
+                            .img-sec{
+                                height: 120px;
+                                padding: 10px;
+                                .img{
+                                    width: 100%;
+                                    height: 100px;
+                                    background-color: grey;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+@keyframes imgEntrada{
+    0%{
+        transform: translateX(-1700px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes imgTarjeta{
+    0%{
+        background-position: 5% 58%;
+    }
+    100%{
+        background-position: 45% 58%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .sec-productos{
+        .contenedor{
+            height: fit-content;
+            padding-left: 3px;
+            padding-right: 3px;
+            .renglon{
+                height: 25vh;
+                .tarjeta{
+                    height: 100%;
+                    min-height: 110px;
+                    padding: 5px;
+                    .img{
+                        height: 100%;
+                        min-height: 110px;
+                        width: 100%;
+                        padding: 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .bg{
+                            width: 100%;
+                            height: 100%;
+                            min-height: 110px;
+                            // background-color:#442211a8;
+                             background-color: rgba(0, 0, 0, 0.705);                        
+                            color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: $fte-sec;
+                            h3{
+                                letter-spacing: 2px;
+                                text-align: center;
+                                
+                                &:hover{
+                                    cursor: pointer;
+                                    transform: scale(1.1);
+                                }
+                            }
+                            p{
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                       
+                    }
+                    #img1{
+                        background-image: url(../img/carteleria/IMG-20210114-WA0012.jpg);
+                        background-position: center center;
+                        animation-name: imgEntrada;
+                        animation-duration: 2.3s;
+                    }
+                    #img2{
+                        background-image: url(../img/chapa-gruesa/chapa.jpg);
+                        background-position: center center;
+                        animation-name: imgEntrada;
+                        animation-duration: 1.4s;
+                    }
+                    #img3{
+                        background-image: url(../img/cerramientos-aberturas/aberturas3.jpg);
+                        background-position: 50% 25%;
+                        animation-name: imgEntrada;
+                        animation-duration: 2s;
+                    }
+                    #img4{
+                        background-image: url(../img/barandas/baranda1.jpg);
+                        background-position: 25% 58%;
+                        animation-name: imgEntrada;
+                        animation-duration: 1s;
+                        
+                    }
+                   
+                }
+            }
+            .renglon2{
+                margin-top: 25vh;
+            }
+        }
+        
+        
+        .bg-galeria{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.87);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            .container1{
+                .encabezado-galeria{
+                    margin-top: 30px;
+                    width: 86%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-bottom: 2px solid $color-sec-gris;
+                    .fa-times{
+                        color: #fff;
+                        font-size: 1.3em;
+                        &:hover{
+                            color: $color-dorado;
+                        }
+                    }
+                    h2{
+                        font-family: $fte-ppal;
+                        color: #fff;
+                        .fas{
+                            margin-right: 6px;
+                            font-size: 0.7em;
+                            transform: translateY(-4px);
+                        }
+                    }
+                }
+                .cont-galeria{
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 30px;
+                    .col{
+                        padding: 20px;
+                        height: fit-content;
+                        .cont-img{
+                            border: 1px solid grey;
+                            width: 80%;
+                            height: 75vh;
+                        }
+                        .row{
+                            height: 38vh;
+                        }
+                        .top{
+                            .cont-texto{
+                                border: 1px solid $color-sec-marron;
+                                border-radius: 8px;
+                                padding: 35px 25px 30px 25px;
+                                height: fit-content;
+                                p{
+                                    color: rgba(255, 255, 255, 0.76);
+                                    font-family: $fte-sec;
+                                    text-align: justify;
+                                    // text-transform: uppercase;
+                                }
+                            }
+                        }
+                        .bottom{
+                            .cont-fotos{
+                                .img-sec{
+                                    height: 120px;
+                                    padding: 10px;
+                                    .img{
+                                        width: 100%;
+                                        height: 100px;
+                                        background-color: grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

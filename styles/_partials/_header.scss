@@ -14,7 +14,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 35%;
         .logo{
             img{
                 margin-top: -40px;
@@ -40,9 +40,9 @@ header{
         justify-content: space-between;
         align-items: flex-end;
         .nav-redes{
-            width: 80px;
+            width: 100px;
             margin-top: -10px;
-            margin-right: -4px;
+            margin-right: -2px;
             .icons{
                 width: 100%;
                 display: flex;
@@ -60,12 +60,12 @@ header{
         }
         .nav-cont{
             margin-bottom: -16px;
-            margin-right: 12px;
+            width: 100%;
             .menu{
                 margin-bottom: 0px;
                 display: flex;
                 justify-content: space-between;
-                width: 30vw;
+                margin-right: -12px;
                 li{
                     list-style: none;
                     color: $color-dorado;
@@ -139,3 +139,13 @@ header{
 }
   
   }
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .logo{
+        img{
+            margin-top: -40px;
+            width: 180px;
+            height: 60px;
+            margin-left: -45px;
+        }
+    }
+}

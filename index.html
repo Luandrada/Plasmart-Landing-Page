@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
-    <meta name="description" content="Trabajos artísticos en chapa para uso arquitectónico o decorativo. Productos estandar y a medida. Chapa calada en variados diseños.Córdoba, Argentina.">
+    <meta name="description"
+        content="Trabajos artísticos en chapa para uso arquitectónico o decorativo. Productos estandar y a medida. Chapa calada en variados diseños.Córdoba, Argentina.">
     <meta name="keywords" content="chapa">
     <meta name="keywords" content="chapa calada">
     <meta name="keywords" content="diseños en chapa">
@@ -40,18 +41,21 @@
                 <i class="fas fa-shopping-cart d-md-none"></i>
                 <i class="fas fa-bars  d-md-none" id="menu" onClick="abrirMenu()"></i>
                 <i class="fas fa-times " id="close" onClick="cerrarMenu()"></i>
-                
+
             </div>
         </div>
         <div class="nav-options  d-md-flex" id="navbarSupportedContent">
             <div class="d-none d-sm-none d-md-block nav-redes">
                 <div class="icons">
-                    <a href="https://www.facebook.com/wantfrom" target="_blank"><i
-                            class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/wantfrom.es/" target="_blank"><i
+
+                    <a href="https://www.instagram.com/plasmart_cba/" target="_blank"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/wantfrom/" target="_blank"><i
-                            class="fas fa-envelope"></i></a>
+
+
+                    <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
 
             </div>
@@ -79,18 +83,18 @@
     <section class="sec-productos container-fluid">
         <div class="contenedor">
             <div class="row renglon">
-                <div class="col-md-7 tarjeta" >
+                <div class="col-md-7 tarjeta">
                     <div class="img" id="img1">
                         <div class="bg">
-                            <h3 onClick="abrirGaleria()">DISEÑO</h3>
+                            <h3 onClick="abrirGaleria(1)">DISEÑO</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 tarjeta"  >
+                <div class="col-md-5 tarjeta">
                     <div class="img" id="img2">
                         <div class="bg">
-                            <h3>CHAPA GRUESA</h3>
+                            <h3 onClick="abrirGaleria(2)">CHAPA GRUESA</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
@@ -100,7 +104,7 @@
                 <div class="col-md-5 tarjeta">
                     <div class="img" id="img3">
                         <div class="bg">
-                            <h3>OTROS</h3>
+                            <h3 onClick="abrirGaleria(3)">OTROS</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
@@ -108,7 +112,7 @@
                 <div class="col-md-7 tarjeta">
                     <div class="img" id="img4">
                         <div class="bg">
-                            <h3>ARQUITECTURA</h3>
+                            <h3 onClick="abrirGaleria(4)">ARQUITECTURA</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
@@ -119,18 +123,22 @@
         <div class="bg-galeria" id="bg-galeria">
             <div class="container1">
                 <div class="encabezado-galeria d-flex justify-content-between align-items-center">
-                    <h2><i class="fas fa-images"></i> DISEÑO</h2>
+                    <div class="title">
+                        <i class="fas fa-images"></i>
+                        <h2 id="tit-galeria"> </h2>
+                    </div>
+                    
                     <i class="fas fa-times" onClick="cerrarGaleria()"></i>
                 </div>
                 <div class="container cont-galeria">
-                    <div class="row">
+                    <div class="row d-flex flex-column flex-md-row">
                         <div class="col col-md-6  left d-flex justify-content-center align-items-center">
-                            <div class="cont-img">
+                            <div class="cont-img" id="img-sec1">
 
                             </div>
                         </div>
-                        <div class=" col col-md-6 right">
-                            <div class="row top">
+                        <div class=" col col-md-6 right d-flex flex-column">
+                            <div class="row order-2 order-md-1 top">
                                 <div class="cont-texto">
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque optio placeat,
                                         non ab ipsa delectus accusamus sit molestias officiis dolorum eum
@@ -140,24 +148,24 @@
                                         temporibus mollitia accusantium, aut ullam nisi illo officia, in sint!</p>
                                 </div>
                             </div>
-                            <div class="row  bottom  ">
+                            <div class="row order-1 order-md-2 bottom  ">
                                 <div class="cont-fotos d-flex justify-content-around align-items-center">
-                                    <div class=" col col-md-3 img-sec" >
-                                        <div class="img"  id="img2">
+                                    <div class=" col col-md-3 img-sec">
+                                        <div class="img" id="img-sec2" onclick="cambiarImagen(2)">
 
                                         </div>
                                     </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
-                                        <div id="img3" class="img"></div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
+                                        <div id="img-sec3" class="img"  onclick="cambiarImagen(3)"></div>
 
                                     </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
-                                        <div id="img4" class="img"></div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
+                                        <div id="img-sec4" class="img"  onclick="cambiarImagen(4)"></div>
 
                                     </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center" >
-    
-                                        <div id="img5" class="img"></div>
+                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
+
+                                        <div id="img-sec5" class="img"  onclick="cambiarImagen(5)"></div>
 
                                     </div>
                                 </div>

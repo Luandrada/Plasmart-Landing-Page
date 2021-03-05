@@ -24,6 +24,7 @@ a{
     border-radius: 100%;
     background-color:rgba(0, 0, 0, 0.76);
     display: flex;
+    border: 1px solid $color-sec-gris;
     justify-content: center;
     align-items: center;
     position:fixed;
@@ -34,4 +35,17 @@ a{
             margin-left: -5px;
             color: $color-dorado;
         }
+}
+
+@media only screen and (max-width: 767px){
+    .tienda-flot{
+        width: 62px;
+        height: 62px;
+        right: 25px;
+        bottom: 15px;
+            .fas{
+                font-size: 1.6em;
+                margin-left: -4px;
+            }
+    }
 }

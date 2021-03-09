@@ -11,7 +11,7 @@
         padding-left: 10px;
         padding-right: 10px;
         .renglon{
-            height: 50%;
+            height: 100%;
             .tarjeta{
                 height: 100%;
                 padding: 20px;
@@ -25,8 +25,9 @@
                         width: 100%;
                         height: 100%;
                         // background-color:#442211a8;
-                         background-color: rgba(0, 0, 0, 0.705);                        
-                        color: white;
+                        // background-color: rgba(0, 0, 0, 0.534);                        
+                        color: black;
+                        // color: white;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -35,6 +36,9 @@
                         h3{
                             letter-spacing: 2px;
                             text-align: center;
+                            display: block;
+                            padding: 3px 10px;
+                            background-color: rgba(255, 255, 255, 0.623);
                             
                             &:hover{
                                 cursor: pointer;
@@ -42,37 +46,35 @@
                             }
                         }
                         p{
+                             padding: 0px 10px;
+                             background-color: rgba(255, 255, 255, 0.856);
                             &:hover{
                                 cursor: pointer;
+                                color: $color-dorado;
+                           
                             }
                         }
                     }
                    
                 }
                 #img1{
-                    background-image: url(../img/disenos/20200908_093325.jpg);
+                    background-image: url(../img/pergolas/pergola3.jpg);
                     background-position: 0 60%;
-                    animation-name: imgEntrada;
-                    animation-duration: 2.3s;
-                }
-                #img2{
-                    background-image: url(../img/chapa-gruesa/chapa.jpg);
-                    background-position: center center;
-                    animation-name: imgEntrada;
-                    animation-duration: 1.4s;
-                }
-                #img3{
-                    background-image: url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg);
-                    background-position: 50% 35%;
                     animation-name: imgEntrada;
                     animation-duration: 2s;
                 }
-                #img4{
-                    background-image: url(../img/barandas/baranda1.jpg);
-                    background-position: 25% 58%;
+                #img2{
+                    background-image: url(../img/disenos/20200908_093325.jpg);
+                    background-position: center center;
                     animation-name: imgEntrada;
-                    animation-duration: 1s;
-                    
+                    animation-duration: 1.5s;
+                }
+                #img3{
+                    background-image: url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg);
+                    background-image: url(../img/otros/oxi.jpg);
+                    background-position: 50% 5%;
+                    animation-name: imgEntrada;
+                    animation-duration: 0.9s;
                 }
                
             }
@@ -87,6 +89,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 100;
         display: none;
         .container1{
             .encabezado-galeria{
@@ -139,35 +142,65 @@
                         .cont-texto{
                             border: 1px solid $color-sec-marron;
                             border-radius: 8px;
-                            padding: 35px 25px 30px 25px;
+                            padding: 40px 35px 40px 35px;
                             height: fit-content;
                             p{
                                 color: rgba(255, 255, 255, 0.76);
                                 font-family: $fte-sec;
                                 text-align: justify;
-                                // text-transform: uppercase;
+                                font-size: 18px;
+                                //text-transform: uppercase;
+                            }
+                            a{
+                                color:$color-dorado;
+                                text-decoration: none;
+                                &:link{
+                                    text-decoration: none;
+                                }
+                                &:visited{
+                                    text-decoration: none;
+                                }
+                                &:hover{
+                                    color: white;
+                                    
+                                }
                             }
                         }
                     }
                     .bottom{
                         .cont-fotos{
-                            .img-sec{
-                                height: 120px;
-                                padding: 10px;
-                                .img{
+                            width: 100%;
+                            margin-top: -100px;
+                            .col{
+                                .caja{
+                                    margin-left: auto;
+                                    margin-right: auto;
                                     width: 100%;
-                                    height: 100px;
-                                    background-color: transparent;
-                                    &:hover{
-                                        border: 2px solid $color-dorado;
+                                    height: 130px;
+                                    margin-bottom: 0;
+                                    .img-sec{
+                                        .img{
+                                            width: 100%;
+                                            height: 120px;
+                                            background-color: transparent;
+                                            &:hover{
+                                                border: 4px solid $color-dorado;
+                                            }
+                                        }
+                                        #img-sec2, #img-sec3, #img-sec4, #img-sec5{
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-position: center center;
+                                        }
+                                        #img-sec2{
+                                            margin-left: 0;
+                                            margin-top: 4px;
+                                        }
                                     }
                                 }
-                                #img-sec2, #img-sec3, #img-sec4, #img-sec5{
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    background-position: center center;
-                                }
                             }
+                            
+                            
                         }
                     }
                 }
@@ -201,7 +234,7 @@
             padding-left: 3px;
             padding-right: 3px;
             .renglon{
-                height: 25vh;
+                height: 33vh;
                 .tarjeta{
                     height: 100%;
                     min-height: 110px;
@@ -216,22 +249,23 @@
                             height: 100%;
                             min-height: 110px;                            
                             h3{
-                                font-size: 22px;
-                                margin-bottom: 0px;
+                                font-size: 18px !important;
+                                
                             }
                             p{
-                                font-size: 15px;
+                                font-size: 15px !important;
                             }
                         }
                        
+                    }
+                    #img3{
+                        background-position: 50% 40%;
                     }
                   
                    
                 }
             }
-            .renglon2{
-                margin-top: 25vh;
-            }
+            
         }
         
         
@@ -250,20 +284,20 @@
                     }
                 }
                 .cont-galeria{
-                    margin-top: 0px;
+                    margin-top: 3vh;
                     .col{
                         padding: 0px;
                         height: 100%;
                         .cont-img{
                             width: 80%;
-                            height: 40vh;
+                            height: 39vh;
                         }
                         .row{
                             height: 18vh;
                         }
                         .top{
                             margin-bottom: 0;
-                            margin-top: -5px;
+                            margin-top: 2vh;
                             .cont-texto{
                                 padding: 5px 10px 10px 5px;
                                 height: fit-content;
@@ -272,29 +306,32 @@
                                 margin-right: auto;
                                 p{
                                     font-size: 12px;
+                                    text-align: left;
                                 }
                             }
                         }
                         .bottom{
-                            margin-top:-14px;
-                            margin-bottom: 0;
+                            margin-top: 11vh;
                             .cont-fotos{
-                                width: 90%;
+                                width: 100%;
                                 margin-left: auto;
                                 margin-right: auto;
-                                .img-sec{
-                                    height: 120px;
-                                    padding: 10px;
-                                    .img{
-                                        width: 100%;
-                                        max-width: 60px;
-                                        height: 60px;
-                                        background-color: grey;
-                                    }
-                                    #img2{
-                                        margin-top: 20px;
+                                .col{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .caja{
+                                        height: 85px;
+                                        .img-sec{
+                                            .img{
+                                                width: 100%;
+                                                height: 85px;
+                                            }
+                                        }
                                     }
                                 }
+                                
+                                
                             }
                         }
                     }
@@ -307,6 +344,24 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+  .sec-productos{
+    max-height: 900px;
+  }
+    .contenedor{
+      .renglon{
+
+          .tarjeta{
+            h3{
+                font-size: 20px !important;
+                
+            }
+            p{
+                font-size: 16px !important;
+            }
+          }
+      }
+  }
+ 
     .bg-galeria{
         width: 100%;
         height: 100vh;
@@ -316,6 +371,7 @@
         left: 0;
         display: none;
         .container1{
+            max-height: 780px;
             .encabezado-galeria{
                 margin-top: 30px;
                 width: 86%;
@@ -338,7 +394,6 @@
                     padding: 20px;
                     height: fit-content;
                     .cont-img{
-                        border: 1px solid grey;
                         width: 80%;
                         height: 75vh;
                     }
@@ -354,22 +409,28 @@
                             p{
                                 color: rgba(255, 255, 255, 0.76);
                                 font-family: $fte-sec;
-                                text-align: justify;
-                                // text-transform: uppercase;
+                                text-align: left !important;
+                                font-size: 14px;
                             }
                         }
                     }
                     .bottom{
+                        margin-top: 20px;
                         .cont-fotos{
-                            .img-sec{
-                                height: 120px;
-                                padding: 10px;
-                                .img{
-                                    width: 100%;
-                                    height: 100px;
-                                    background-color: grey;
+                            width: 100%;
+                            .col{
+                                .caja{
+                                    height: 120px;
+                                    .img-sec{
+                                        .img{
+                                            width: 100%;
+                                            height: 100px;
+                                        }
+                                    }
                                 }
                             }
+                            
+                            
                         }
                     }
                 }

@@ -1,0 +1,89 @@
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/disenos/20200908_093325.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section .fondo {
+  background-color: #0c0c0e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+section .logo {
+  width: 300px;
+  position: relative;
+  z-index: 10;
+  margin-top: -40px;
+}
+
+section .cont-mensaje {
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  position: relative;
+  z-index: 10;
+  font-family: "Roboto", sans-serif;
+}
+
+section .cont-mensaje .mensaje1 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+section .cont-mensaje .regresar {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+section .cont-mensaje .regresar a {
+  text-decoration: none;
+  color: #dc9e40;
+}
+
+section .cont-mensaje .regresar a:link {
+  text-decoration: none;
+  color: #dc9e40;
+}
+
+section .cont-mensaje .regresar a:visited {
+  text-decoration: none;
+  color: #dc9e40;
+}
+
+section .cont-mensaje .regresar a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  .logo {
+    width: 250px !important;
+  }
+  .mensaje1, .regresar {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=mensaje-enviado.css.map */

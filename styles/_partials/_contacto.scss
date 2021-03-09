@@ -1,0 +1,369 @@
+
+@import "variables";
+
+
+.sec-contacto-ubic{
+    padding-top: 50px;
+    background: rgb(103,102,99);
+    background: linear-gradient(180deg, rgba(103,102,99,1) 0%, rgba(163,163,163,1) 18%);
+
+    .parallax{
+    background-image:url('../img/industria.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    .info-parallax{
+        background-color: rgba(0, 0, 0, 0.829);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45vw;
+        min-width: 290px;
+        height: 60%;
+        margin-left: 70px;
+        .texto-visitanos{
+            margin-left: 25px;
+            display: flex;
+            flex-direction: column;
+            h3{
+                color: white;
+                font-family: $fte-sec;
+                text-transform: uppercase;
+                font-size: 18px;
+                span{
+                    color: $color-dorado;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+            p{
+                color: rgba(255, 255, 255, 0.836);
+                width: 70%;
+                font-family: $fte-ppal;
+                font-size: 13px;
+            }
+
+        }
+       
+    }
+    }
+    .sec-contacto{
+        width: 100%;;
+        background-color:rgba(163,163,163,1) ;
+        .row{
+            .contacto-izq{
+                background-color: $color-dorado;
+                display: flex;
+                flex-direction: column;
+                padding-top: 30px;
+                .cont-naranja{
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    min-width: 260px;
+                    h3{
+                        font-size: $fte-sec;
+                        text-transform: uppercase;
+                        color: black;
+                        letter-spacing: 2px;
+                    }
+                    span{
+                        display: block;
+                        height: 7px;
+                        width: 60px;
+                        background-color: $color-sec-bordo;
+                        margin-left: 0px;
+                        margin-top: -5px ;
+                        margin-bottom: 22px      
+                        
+                    };
+                    .contacto-items{
+                        color: black;
+                        .item{
+                            display: flex;
+                            align-items: baseline;
+                            width: 70%;
+                            .fas{
+                                margin-right: 10px;
+                            }
+                            p{
+                                font-family: $fte-sec;
+                            }
+                            &:hover{
+                                cursor: default;
+                            }
+                        }
+                    }
+                    .nav-redes{
+                        width: 100px;
+                        margin-top: 0px;
+                        margin-right: -2px;
+                        .icons{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .fab, .fas{
+                                color: black;
+                                font-size: 1.1em;
+                                &:hover{
+                                    cursor: [pointer];
+                                    color: $color-sec-gris;
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+                    }
+                 
+                }
+                .cont-img-text{
+                    align-items: center;
+            
+                    p{
+                        line-height: 18px;
+                        font-family: $fte-ppal;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        width: 70%;
+                        min-width: 260px;
+                        margin-top: 28px;
+                    }
+                }
+                
+            }
+            .contacto-der{
+                padding: 30px;
+                padding-bottom: 5px;
+                h3{
+                    font-size: $fte-sec;
+                    text-transform: uppercase;
+                    color: black;
+                    letter-spacing: 2px;
+                }
+                span{
+                    display: block;
+                    height: 7px;
+                    width: 60px;
+                    background-color: $color-sec-bordo;
+                    margin-left: 0px;
+                    margin-top: -5px ;
+                    margin-bottom: 22px      
+                    
+                };
+                p{
+                    font-family: $fte-ppal;
+                }
+            }
+        }
+       
+    }
+    .copy {
+        background-color: #fff;
+        height: 55px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-top: 15px;
+        a {
+            text-decoration: none;
+            margin-top: -13px;
+            margin-left: 2px;
+            img {
+                width: 105px;
+                height: 36px;
+                margin-left: 5px;
+              }
+            &:focus{
+                outline: none;
+            }
+          }
+          p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+          }
+      }
+}
+.input-form-div{
+    padding-left: 0px;
+    position: relative;
+}
+.form-contact{
+    border: 0;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    background-color: rgba(92, 88, 88, 0.493);
+    &:focus{
+      outline: none;
+      border-bottom: 2px solid $color-dorado;
+
+    }
+}
+.form-contact2{
+    border-radius: 7px ; 
+    border: 0;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    background-color: $color-sec-gris !important;
+    &:focus{
+      outline: none;
+
+    }
+    &:hover{
+        border: 1px solid grey;
+        background-color: rgba(0, 0, 0, 0.521) !important;
+    }
+}
+
+.ph-area{
+  position: absolute;
+  top: 23px;
+  left: 0;
+  padding: 0 0 0 13px;
+  transition: 200ms;
+  color: rgb(218, 214, 214);
+  font-family: $fte-ppal;
+}
+@media only screen and (max-width: 767px){
+    .sec-contacto-ubic{
+        .parallax{
+        align-items: center;
+        justify-content: center;
+        .info-parallax{
+            width: 100%;
+            max-width: 500px;
+            height: 60%;
+            margin-left: 0;
+            .texto-visitanos{
+                h3{
+                    font-size: 18px;
+                    span{
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                }
+    
+            }
+           iframe{
+               margin-left: 20px;
+               width: 100px;
+               height: 80px;
+           }
+        }
+        }
+        .sec-contacto{
+            .row{
+                .contacto-izq{
+                    .cont-naranja{
+                        width: 90%;
+                    }
+                    .cont-img-text{
+                        p{
+                            width: 90%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .sec-contacto-ubic{
+        .parallax{
+        align-items: center;
+        justify-content: center;
+        .info-parallax{
+            width: 45vw;
+            min-width: 500px;
+            height: 60%;
+            margin-left: 70px;
+            .texto-visitanos{
+                margin-left: 25px;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    color: white;
+                    font-family: $fte-sec;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    span{
+                        color: $color-dorado;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                    }
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.836);
+                    width: 70%;
+                    font-family: $fte-ppal;
+                    font-size: 13px;
+                }
+    
+            }
+           iframe{
+               margin-left: 40px;
+           }
+        }
+        }
+        .sec-contacto{
+            .row{
+                .contacto-izq{
+                    .cont-naranja{
+                        width: 97%;
+                        min-width: unset;
+                        .contacto-items{
+                            .item{
+                                width: 85%;
+                                .fas{
+                                    margin-right: 8px;
+                                }
+                                p{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .cont-img-text{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+
+}
+@media only screen and (min-width: 991px) and (max-width: 1380px){
+
+    .sec-contacto-ubic{
+        .parallax{
+        .info-parallax{
+           iframe{
+               margin-left: 20px;
+           }
+        }
+        }
+    }
+}

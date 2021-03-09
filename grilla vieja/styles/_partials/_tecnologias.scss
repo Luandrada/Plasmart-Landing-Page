@@ -1,0 +1,176 @@
+@import "variables";
+
+.sec-tecnologias{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,32,29,1) 42%, rgba(103,102,99,1) 100%);
+    .right{
+        height: 100vh;
+        padding-top: 60px;
+        .texto{
+            background-color: rgba(0, 0, 0, 0.356);
+            width: 80%; min-width: 290px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 20px 5px 20px;
+            margin-top: 40px;
+            
+            p{
+                font-family: $fte-ppal;
+                color: $color-dorado;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+        }
+        .cont-img-tec{
+            position:relative;
+            .frame-img{
+                 border: 10px solid $color-dorado;
+                border-radius:7px ;
+                width: 360px;
+                height: 410px;
+                position:absolute;
+                z-index: 1;
+                top: -30px;
+                right: 0px;                
+            }
+            .frame-img2{
+                border: 2px solid  $color-sec-bordo;
+               border-radius:7px ;
+               width: 370px;
+               height: 375px;
+               position:absolute;
+               z-index: 0;
+               top: 45px;
+               right: -30px;                
+           }
+            img{
+                width: 370px;
+                height: 410px;
+                border-radius:6px ;
+                position:relative;
+                top: 0;
+                right: 30px;
+                z-index: 2;
+            }
+        }
+    }
+    .left{
+        padding: 40px;
+        .cont-info-tec{
+            h6{
+                color:rgba(255, 255, 255, 0.555);
+                font-family: $fte-sec;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            h2{
+                color: $color-dorado;
+                font-family: $fte-sec;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            p{
+                font-family: $fte-sec;
+                color: white;
+                &:hover{
+                    cursor: default;
+                }
+
+            }
+            span{
+                display: block;
+                height: 7px;
+                width: 60px;
+                background-color: $color-sec-bordo;
+                margin-left: 14px;
+                margin-top: -5px ;
+                margin-bottom: 22px      
+                
+            };
+        }
+        .uno{
+            margin-bottom: 60px;
+        }
+        .nav-redes{
+            width: 120px;
+            margin-top: -10px;
+            margin-right: -2px;
+            align-self: flex-start ;
+            margin-top: 30px;
+            .icons{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .fab, .fas{
+                    color: $color-dorado;
+                    font-size: 1.1em;
+                    &:hover{
+                        cursor: [pointer];
+                        color: #fff;
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .sec-tecnologias{
+        width: 100%;
+        height: 100vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,32,29,1) 42%, rgba(103,102,99,1) 100%);
+        .right{
+            height: 100vh;
+            padding-top: 60px;
+            .texto{
+                background-color: rgba(0, 0, 0, 0.356);
+                width: 80%; min-width: 290px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 5px;
+                margin-top: 40px;
+                
+                p{
+                    font-size: 15px;
+                }
+            }
+            .cont-img-tec{
+                .frame-img{
+                     border: 8px solid $color-dorado;
+                    border-radius:7px ;
+                    width: 270px;
+                    height: 285px;
+                    top: -25px;
+                    right: 0px;                
+                }
+                .frame-img2{
+                    border: 2px solid  $color-sec-bordo;
+                   border-radius:7px ;
+                   width: 280px;
+                   height: 260px;
+                   top: 45px;
+                   right: -10px;                
+               }
+                img{
+                    width: 280px;
+                    height: 290px;
+                    border-radius:6px ;
+                    top: 0;
+                    right: 30px;
+                }
+            }
+        }       
+    }
+    
+}

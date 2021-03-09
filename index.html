@@ -33,91 +33,84 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="cont-img-menu">
-            <a class="logo" style="margin-left: 40px; margin-top: 45px;" href="">
-                <img id="logo1" src="img/logos/logo-horizontal.png" width="200px" height="55px" alt="">
-            </a>
-            <div class="cont-icon-menu d-flex ">
-                <i class="fas fa-shopping-cart d-md-none"></i>
-                <i class="fas fa-bars  d-md-none" id="menu" onClick="abrirMenu()"></i>
-                <i class="fas fa-times " id="close" onClick="cerrarMenu()"></i>
+        <div class="cont1">
+            <div class="cont-img-menu">
+                <a class="logo" style="margin-left: 40px; margin-top: 45px;" href="">
+                    <img id="logo1" src="img/logos/logo-horizontal.png" width="200px" height="55px" alt="">
+                </a>
+                <div class="cont-icon-menu d-flex ">
+                    <i class="fas fa-shopping-cart d-md-none"></i>
+                    <i class="fas fa-bars  d-md-none" id="menu" onClick="abrirMenu()"></i>
+                    <i class="fas fa-times " id="close" onClick="cerrarMenu()"></i>
 
+                </div>
+            </div>
+            <div class="nav-options  d-md-flex" id="navbarSupportedContent">
+                <div class="d-none d-sm-none d-md-block nav-redes">
+                    <div class="icons">
+
+                        <a href="https://www.instagram.com/plasmart_cba/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+
+
+                        <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5493513264597"><i class="fab fa-whatsapp"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="nav-options  d-md-flex" id="navbarSupportedContent">
-            <div class="d-none d-sm-none d-md-block nav-redes">
-                <div class="icons">
 
-                    <a href="https://www.instagram.com/plasmart_cba/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-
-
-                    <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
-                            class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                    <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-
-            </div>
-            <div class=" nav-cont d-md-block " id="contenido-menu">
-                <ul class="menu">
-                    <li class="nav-item" id="barra2" onmouseover="efectoSubrayado(1)" onmouseout="quitarSubrayado(1) ">
-                        <a class="nav-link text-light" href="#Tu-Tienda">PRODUCTOS</a>
-                        <span class="underline" id="line1"></span>
-                    </li>
-                    <li class="nav-item" id="barra3" onmouseover="efectoSubrayado(2)" onmouseout="quitarSubrayado(2) ">
-                        <a class="nav-link text-light" href="#Licencias">TECNOLOGÍAS</a>
-                        <span class="underline" id="line2"></span>
-                    </li>
-                    <li class="nav-item" id="barra4" onmouseover="efectoSubrayado(3)" onmouseout="quitarSubrayado(3) ">
-                        <a class="nav-link text-light" href="#FAQ">CONTACTO</a>
-                        <span class="underline" id="line3"></span>
-                    </li>
-                </ul>
-            </div>
-
+        <div class=" nav-cont d-md-block " id="contenido-menu">
+            <ul class="menu">
+                <li class="nav-item" id="barra2" onmouseover="efectoSubrayado(1)" onmouseout="quitarSubrayado(1) ">
+                    <a class="nav-link text-light" href="#productos">PRODUCTOS</a>
+                    <span class="underline" id="line1"></span>
+                </li>
+                <li class="nav-item" id="barra3" onmouseover="efectoSubrayado(2)" onmouseout="quitarSubrayado(2) ">
+                    <a class="nav-link text-light" href="#tecnologias">TECNOLOGÍAS</a>
+                    <span class="underline" id="line2"></span>
+                </li>
+                <li class="nav-item" id="barra4" onmouseover="efectoSubrayado(3)" onmouseout="quitarSubrayado(3) ">
+                    <a class="nav-link text-light" href="#contacto">CONTACTO</a>
+                    <span class="underline" id="line3"></span>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- FIN HEADER -->
     <!-- SECCION PRODUCTOS -->
-    <section class="sec-productos container-fluid">
+    <section class="sec-productos container-fluid" id="productos">
         <div class="contenedor">
             <div class="row renglon">
-                <div class="col-md-7 tarjeta">
+                <div class="col-md-4 tarjeta">
                     <div class="img" id="img1">
                         <div class="bg">
-                            <h3 onClick="abrirGaleria(1)">DISEÑO</h3>
+                            <h3 onClick="abrirGaleria(1)">ARQUITECTURA </h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 tarjeta">
+                <div class="col-md-4 tarjeta">
                     <div class="img" id="img2">
                         <div class="bg">
-                            <h3 onClick="abrirGaleria(2)">CHAPA GRUESA</h3>
+                            <h3 onClick="abrirGaleria(2)">DISEÑO</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row renglon renglon2 ">
-                <div class="col-md-5 tarjeta">
+
+                <div class="col-md-4 tarjeta">
                     <div class="img" id="img3">
                         <div class="bg">
-                            <h3 onClick="abrirGaleria(3)">OTROS</h3>
-                            <p>Ver en Tienda</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 tarjeta">
-                    <div class="img" id="img4">
-                        <div class="bg">
-                            <h3 onClick="abrirGaleria(4)">ARQUITECTURA</h3>
+                            <h3 onClick="abrirGaleria(3)">METALÚRGICA</h3>
                             <p>Ver en Tienda</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="bg-galeria" id="bg-galeria">
@@ -127,7 +120,7 @@
                         <i class="fas fa-images"></i>
                         <h2 id="tit-galeria"> </h2>
                     </div>
-                    
+
                     <i class="fas fa-times" onClick="cerrarGaleria()"></i>
                 </div>
                 <div class="container cont-galeria">
@@ -138,54 +131,235 @@
                             </div>
                         </div>
                         <div class=" col col-md-6 right d-flex flex-column">
-                            <div class="row order-2 order-md-1 top">
+                            <div class="row  top">
                                 <div class="cont-texto">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque optio placeat,
-                                        non ab ipsa delectus accusamus sit molestias officiis dolorum eum
-                                        exercitationem?<br> Suscipit minima modi, sunt facere quas tempora labore? Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis sunt
-                                        consectetur autem similique quas! Ex porro quam ducimus, reprehenderit
-                                        temporibus mollitia accusantium, aut ullam nisi illo officia, in sint!</p>
+                                    <p id="texto-galeria"></p>
+                                    <a href="" id="enlace-galeria"></a>
                                 </div>
                             </div>
                             <div class="row order-1 order-md-2 bottom  ">
                                 <div class="cont-fotos d-flex justify-content-around align-items-center">
-                                    <div class=" col col-md-3 img-sec">
-                                        <div class="img" id="img-sec2" onclick="cambiarImagen(2)">
+                                    <div class="col">
+                                        <div class="row caja">
+                                            <div class="col-6 col-md-8  img-sec">
+                                                <div class=" row img" id="img-sec2" onclick="cambiarImagen(2)"></div>
+                                            </div>
+                                            <div
+                                                class="col-6 col-md-4  img-sec d-flex justify-content-center align-items-center">
+                                                <div id="img-sec3" class="img" onclick="cambiarImagen(3)"></div>
 
+                                            </div>
+                                        </div>
+                                        <div class="row caja">
+                                            <div
+                                                class="col-6 col-md-4  img-sec d-flex justify-content-center align-items-center">
+                                                <div id="img-sec4" class="img" onclick="cambiarImagen(4)"></div>
+
+                                            </div>
+                                            <div
+                                                class="col-6 col-md-8  img-sec d-flex justify-content-center align-items-center">
+
+                                                <div id="img-sec5" class="img" onclick="cambiarImagen(5)"></div>
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
-                                        <div id="img-sec3" class="img"  onclick="cambiarImagen(3)"></div>
 
-                                    </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
-                                        <div id="img-sec4" class="img"  onclick="cambiarImagen(4)"></div>
-
-                                    </div>
-                                    <div class="col col-md-3 img-sec d-flex justify-content-center align-items-center">
-
-                                        <div id="img-sec5" class="img"  onclick="cambiarImagen(5)"></div>
-
-                                    </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 
         </div>
     </section>
-
-
-
-
     <!-- FIN SECCION PRODUCTOS -->
+    <!-- SECCION TECNOLOGIAS -->
+    <section class="sec-tecnologias " id="tecnologias">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center left">
+                    <div class="row cont-info-tec uno">
+                        <h6>Tecnologías</h6>
+                        <h2>Corte por plasma</h2>
+                        <span class="line"></span>
+                        <p>Contamos con equipamiento para corte por plasma con pantógrafo. Trabajamos acero, acero
+                            inoxidable chapa galvanizada en espesores desde 1,5mm hasta 25,4mm.</p>
+                    </div>
+                    <div class="row cont-info-tec">
+                        <h6>Tecnologías</h6>
+                        <h2>Plegado</h2>
+                        <span class="line"></span>
+                        <p>Plegado de chapa a medida de varios espesores, en longitudes de hasta 3m. Contáctenos para
+                            asesorarlo en el diseño de una solución única para su necesidad. </p>
+                    </div>
+                    <div class="row nav-redes">
+                        <div class="icons">
+
+                            <a href="https://www.instagram.com/plasmart_cba/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+
+
+                            <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5493513264597"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center right">
+
+                    <div class="row cont-img-tec">
+                        <img src="img/otros/plasma.jpg" alt="">
+                        <div class="frame-img">
+
+                        </div>
+                        <div class="frame-img2">
+
+                        </div>
+                    </div>
+                    <div class="row texto">
+                        <p>Prestamos servicios a la medida de su necesidad, incluyendo instalación, pintura y
+                            asesoramiento técnico y arquitectónico.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- FIN SECCION TECNOLOGIAS -->
+
+    <!-- SECCION CONTACTO y UBICACION -->
+    <section class="sec-contacto-ubic">
+        <div class="parallax">
+            <div class="info-parallax">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3403.9182140770768!2d-64.25286396092395!3d-31.443918441283678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20Circunvalaci%C3%B3n%20Agust%C3%ADn%20Tosco%203043%2C%20Villa%20Aspacia%2C%205010%2C%20C%C3%B3rdoba.!5e0!3m2!1ses-419!2sar!4v1615225070282!5m2!1ses-419!2sar"
+                    width="150" height="110" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="texto-visitanos">
+                    <h3>Visitános y te asesoramos
+                        <br>
+                        <span>personalmente</span>
+                    </h3>
+                    <p>Av. Circunvalación Agustín Tosco 3043, Villa Aspacia, 5010, Córdoba.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="sec-contacto container-fluid">
+            <div class="row">
+                <div class=" order-2 order-md-1  col-12 col-md-5 col-lg-5 contacto-izq" id="contacto">
+                    <div class="cont-naranja">
+                        <h3>Contacto</h3>
+                        <span></span>
+                        <div class="contacto-items">
+                            <div class="item">
+                                <i class="fas fa-phone"></i>
+                                <p>(351) 326 4597</p>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-envelope"></i>
+                                <p class="d-none d-sm-block">mantovanimariano@transfil.com.ar</p>
+                                <p class="d-block d-sm-none">mantovanimariano<br> @transfil.com.ar</p>
+
+                            </div>
+
+                            <div class="item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Av. Circunvalación Agustín Tosco 3043, Villa Aspacia, 5010, Córdoba.</p>
+                            </div>
+                            <div class="item">
+                                <p>Horario de Atención: 8 a 17 hrs</p>
+                            </div>
+                        </div>
+                        <div class="nav-redes">
+                            <div class="icons">
+
+                                <a href="https://www.instagram.com/plasmart_cba/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+
+
+                                <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
+                                        class="fab fa-facebook-square"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=5493513264597"><i
+                                        class="fab fa-whatsapp"></i></a>
+                                <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="cont-img-text d-flex flex-column flex-lg-row">
+                            <p>Décadas de experiencia en el rubro y tecnología de
+                                vanguardia.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="order-1 order-md-2 col-12 col-md-7 col-lg-7 contacto-der">
+                    <div class="right-c " style="  text-align: left; ">
+                        <div class="row  ">
+                            <div class="col-md-12">
+                              
+                                    <h3>Solicite  una cotización</h3>
+                                    <span></span>
+                                <p style="font-size: 18px;">Envíenos su consulta y nos pondremos en contacto con usted a la brevedad.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center " style="padding-bottom: 30px;">
+                            <div class="col-md-12 " style="padding-left: 0px; " style="width: auto;">
+                                <form action="enviar.php" id="contact-form" style="width: auto; margin-left: 30px;"
+                                    method="post" class="contact-form" autocomplete="off">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-sm-12 col-xs-12  input-form-div">
+                                            <input type="text" class="form-contact" style="width: 100%;" id="nombre"
+                                                name="nombre" required>
+                                            <label class="ph-area" for="nombre" id="label-c-1">Nombre</label>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-md-offset-4 input-form-div">
+                                            <input type="text" id="email" class="form-contact" name="email" required>
+                                            <label class="ph-area" for="email" id="label-c-2">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12 col-sm-12 input-form-div" style="height: 100px; ">
+                                            <input type="text" id="msj" class="form-contact" style="height: 100%;"
+                                                name="mensaje" required>
+                                            <label class="ph-area" for="msj" id="label-c-3">Mensaje</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12 col-sm-12 input-form-div">
+                                            <button type="submit" class="form-contact2 btn-enviar-msj button"
+                                                style=" width: 100%; height: 55px;  margin-top: 30px;">
+                                                <img src="img/enviar.svg" style="margin-right: 20px; min-width: 30px;" width="4%" 
+                                                    alt=""></button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Powered by </p>
+            <a href="https://www.wantfrom.es/"> <img src="img/logos/Logo-Azul.svg" alt=""></a>
+
+        </div>
+    </section>
+    <!-- FIN SECCION CONTACTO Y UBICACION  -->
+
     <!-- TIENDA FLOTANTE  -->
     <div class="tienda-flot">
         <i class="fas fa-shopping-cart"></i>

@@ -410,29 +410,17 @@ header .nav-cont .menu li .underline {
 .sec-productos .contenedor .renglon .tarjeta #img1 {
   background-image: url(../img/pergolas/pergola3.jpg);
   background-position: 0 60%;
-  -webkit-animation-name: imgEntrada;
-          animation-name: imgEntrada;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .sec-productos .contenedor .renglon .tarjeta #img2 {
   background-image: url(../img/disenos/20200908_093325.jpg);
   background-position: center center;
-  -webkit-animation-name: imgEntrada;
-          animation-name: imgEntrada;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
 }
 
 .sec-productos .contenedor .renglon .tarjeta #img3 {
-  background-image: url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg);
+  background-image: url(../img/chapa-gruesa/chapa3.jpg) !important;
   background-image: url(../img/otros/oxi.jpg);
   background-position: 50% 5%;
-  -webkit-animation-name: imgEntrada;
-          animation-name: imgEntrada;
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
 }
 
 .sec-productos .bg-galeria {
@@ -977,7 +965,7 @@ header .nav-cont .menu li .underline {
   .sec-tecnologias .right .texto {
     background-color: rgba(0, 0, 0, 0.356);
     width: 80%;
-    min-width: 290px;
+    min-width: 270px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
@@ -1378,7 +1366,7 @@ header .nav-cont .menu li .underline {
   .sec-contacto-ubic .parallax .info-parallax {
     width: 100%;
     max-width: 500px;
-    height: 60%;
+    height: 65%;
     margin-left: 0;
   }
   .sec-contacto-ubic .parallax .info-parallax .texto-visitanos h3 {

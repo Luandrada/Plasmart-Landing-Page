@@ -26,37 +26,42 @@ function abrirGaleria(id){
     document.getElementById("bg-galeria").style.display="block";
         if (id==1) {
             titulo.innerText="ARQUITECTURA";
-            texto.innerText="Conocé nuestra moderna linea de productos espacializados en chapa. Decoración, mobiliario. "
-            enlace.innerText="¡Visitá nuestro e-shop!";
+            texto.innerText="Personalizá tu espacio con una estética única, funcional y armónica. "
+            enlace.innerText="¡Contáctanos!";
             enlace.setAttribute('href','link');
             galeria=1;
+            img1.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
+            img2.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
+            img3.style.backgroundImage="url(../img/cerramientos-aberturas/aberturas3.jpg)";
+            img4.style.backgroundImage="url(../img/frentes/frentee.jpg)";
+            img5.style.backgroundImage="url(../img/barandas/baranda1.jpg)";
+
+
+        }
+        if (id==2) {
+            titulo.innerText="DISEÑO";
+            texto.innerText = "Conocé nuestra moderna linea de productos espacializados en chapa. Decoración, mobiliario. "
+            enlace.innerText="¡Visitá nuestro e-shop!";
+            enlace.setAttribute('href','link');
+            galeria=2;
             img1.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
             img2.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
             img3.style.backgroundImage="url(../img/panos/planoblanco.jpg)";
             img4.style.backgroundImage="url(../img/carteleria/tigre.jpg)";
             img5.style.backgroundImage="url(../img/disenos/diseno.jpg)";
-
-        }
-        if (id==2) {
-            titulo.innerText="DISEÑO";
-            texto.innerText = "Servicios de corte y plegado de chapa para aplicación industrial. Atención personalizada."
-            enlace.innerText="¡Contáctese ahora!";
-            enlace.setAttribute('href','link');
-            galeria=2;
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
-            img2.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
-            img3.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
-            img4.style.backgroundImage="url(../img/chapa-gruesa/chapa3.jpg)";
-            img5.style.backgroundImage="url(../img/chapa-gruesa/chapa-gruesa.jpg)";
+       
         }
         if (id==3) {
             titulo.innerText="METALÚRGICA";
+            texto.innerText = " Servicios de corte y plegado de chapa para aplicación industrial. Atención personalizada."
+            enlace.innerText="¡Contáctese ahora!";
             galeria=3;
-            img1.style.backgroundImage="url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg)";
-            img2.style.backgroundImage="url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg)";
-            img3.style.backgroundImage="url(../img/otros/oxi.jpg)";
+            img1.style.backgroundImage="url(../img/otros/oxi.jpg)";
+            img2.style.backgroundImage="url(../img/otros/oxi.jpg)";
+            img3.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
             img4.style.backgroundImage="url(../img/otros/Trabajoartesanal.jpg)";
-            img5.style.backgroundImage="url()";
+            img5.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
+
         }
 }
 function cerrarGaleria() {
@@ -66,49 +71,53 @@ function cerrarGaleria() {
 function cambiarImagen(id) {
     if (id==2) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
+            img1.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
+
 
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/otros/flame-cutting-process-by-oxygen-acetylene-cutting-machine_73899-1185.jpg)";
+            img1.style.backgroundImage="url(../img/otros/oxi.jpg)";
 
         }
     }
     if (id==3) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/panos/planoblanco.jpg)";
+            img1.style.backgroundImage="url(../img/cerramientos-aberturas/aberturas3.jpg)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
+            img1.style.backgroundImage="url(../img/panos/planoblanco.jpg)";
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/otros/oxi.jpg)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
         }
     }
     if (id==4) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/carteleria/tigre.jpg)";
+            img1.style.backgroundImage="url(../img/frentes/frentee.jpg)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa3.jpg)";
+            img1.style.backgroundImage="url(../img/carteleria/tigre.jpg)";
+            
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/otros/Trabajoartesanal.jpg)";
+            img1.style.backgroundImage='url(../img/otros/Trabajoartesanal.jpg)'
         }
     }
     if (id==5) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/disenos/diseno.jpg)";
+            img1.style.backgroundImage="url(../img/barandas/baranda1.jpg)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa-gruesa.jpg)";
+            
+            img1.style.backgroundImage="url(../img/disenos/diseno.jpg)";
 
         }
         if (galeria==3) {
-            
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
+
         }
     }
     

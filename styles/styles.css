@@ -961,6 +961,8 @@ header .nav-cont .menu li .underline {
   .sec-tecnologias .right {
     padding-top: 0px;
     margin-top: -30px;
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
   .sec-tecnologias .right .texto {
     background-color: rgba(0, 0, 0, 0.356);
@@ -999,6 +1001,8 @@ header .nav-cont .menu li .underline {
   }
   .sec-tecnologias .left {
     padding-top: 60px;
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
 }
 

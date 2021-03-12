@@ -137,6 +137,8 @@
         .right{
             padding-top: 0px;
             margin-top: -30px;
+            max-width: 100% !important;
+            overflow: hidden !important;
             .texto{
                 background-color: rgba(0, 0, 0, 0.356);
                 width: 80%; min-width: 270px;
@@ -177,6 +179,8 @@
         } 
         .left{
             padding-top: 60px;
+            max-width: 100% !important;
+            overflow: hidden !important;
         }      
     }
 }

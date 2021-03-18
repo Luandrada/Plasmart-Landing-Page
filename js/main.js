@@ -26,13 +26,14 @@ function abrirGaleria(id){
     document.getElementById("bg-galeria").style.display="block";
         if (id==1) {
             titulo.innerText="ARQUITECTURA";
-            texto.innerText="Personalizá tu espacio con una estética única, funcional y armónica. "
+            texto.innerHTML=" Personalizá tu espacio con una estética única y armónica. Portones, cerramientos y barandas cortados con plasma a la medida de tu necesidad.<br>Asesoramiento profesional. "
             enlace.innerText="¡Contáctanos!";
             enlace.setAttribute('href','link');
             galeria=1;
-            img1.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
-            img2.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
-            img3.style.backgroundImage="url(../img/cerramientos-aberturas/aberturas3.jpg)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola5.jpg)";
+            img2.style.backgroundImage="url(../img/pergolas/pergola5.jpg)";
+            img2.style.backgroundPosition= "50% 20%"
+            img3.style.backgroundImage="url(../img/pergolas/pergola4.jpg)";
             img4.style.backgroundImage="url(../img/frentes/frentee.jpg)";
             img5.style.backgroundImage="url(../img/barandas/baranda1.jpg)";
 
@@ -40,12 +41,13 @@ function abrirGaleria(id){
         }
         if (id==2) {
             titulo.innerText="DISEÑO";
-            texto.innerText = "Conocé nuestra moderna linea de productos espacializados en chapa. Decoración, mobiliario. "
+            texto.innerHTML = "Conocé nuestra moderna línea de productos especializados en chapa.<br>Decoración, mobiliario, ornamentos para el jardín y mucho más.  "
             enlace.innerText="¡Visitá nuestro e-shop!";
             enlace.setAttribute('href','link');
             galeria=2;
-            img1.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
-            img2.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
+            img1.style.backgroundImage="url(../img/disenos/di2.jpg)";
+            img2.style.backgroundImage="url(../img/disenos/di1.jpg)";
+            img2.style.backgroundPosition= "50% 78%";
             img3.style.backgroundImage="url(../img/panos/planoblanco.jpg)";
             img4.style.backgroundImage="url(../img/carteleria/tigre.jpg)";
             img5.style.backgroundImage="url(../img/disenos/diseno.jpg)";
@@ -53,12 +55,13 @@ function abrirGaleria(id){
         }
         if (id==3) {
             titulo.innerText="METALÚRGICA";
-            texto.innerText = " Servicios de corte y plegado de chapa para aplicación industrial. Atención personalizada."
+            texto.innerHTML = "Servicios de corte y plegado de chapa para aplicaciónes estructurales e industriales.<br> Atención personalizada."
             enlace.innerText="¡Contáctese ahora!";
             galeria=3;
-            img1.style.backgroundImage="url(../img/otros/oxi.jpg)";
-            img2.style.backgroundImage="url(../img/otros/oxi.jpg)";
-            img3.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa3.jpg)";
+            img2.style.backgroundImage="url(../img/chapa-gruesa/chapa1.jpg)";
+            img2.style.backgroundPosition= "50% 25%";
+            img3.style.backgroundImage="url(../img/chapa-gruesa/chapa2.jpg)";
             img4.style.backgroundImage="url(../img/otros/Trabajoartesanal.jpg)";
             img5.style.backgroundImage="url(../img/chapa-gruesa/chapa.jpg)";
 
@@ -71,27 +74,27 @@ function cerrarGaleria() {
 function cambiarImagen(id) {
     if (id==2) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/pergolas/pergola3.jpg)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola5.jpg)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/disenos/20200908_093325.jpg)";
+            img1.style.backgroundImage="url(../img/disenos/di1.jpg)";
 
 
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/otros/oxi.jpg)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa1.jpg)";
 
         }
     }
     if (id==3) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/cerramientos-aberturas/aberturas3.jpg)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola4.jpg)";
         };
         if (galeria==2) {
             img1.style.backgroundImage="url(../img/panos/planoblanco.jpg)";
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/2.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa2.jpg)";
         }
     }
     if (id==4) {
@@ -182,11 +185,11 @@ function cerrarMenu() {
         let label1 = document.getElementById("label-c-1");
         let label2 = document.getElementById("label-c-2");
         let label3 = document.getElementById("label-c-3");
-     
+        let label4 = document.getElementById("label-c-4");
         let campo1=document.getElementById("nombre");
-        let campo2=document.getElementById("email");
-        let campo3=document.getElementById("msj");
-        
+        let campo2=document.getElementById("tel");
+        let campo3=document.getElementById("email");
+        let campo4=document.getElementById("msj");
         campo1.addEventListener("focus",function(){ 
             label1.style.color="rgb(43, 42,42)";
             label1.style.fontSize="80%";
@@ -201,6 +204,11 @@ function cerrarMenu() {
             label3.style.color="rgb(43, 42,42)";
             label3.style.fontSize="80%";
             label3.style.transform="translate3d(0, -110% , 0)"
+        });
+        campo4.addEventListener("focus",function(){ 
+            label4.style.color="rgb(43, 42,42)";
+            label4.style.fontSize="80%";
+            label4.style.transform="translate3d(0, -110% , 0)"
         });
         
 

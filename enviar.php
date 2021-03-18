@@ -8,7 +8,7 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
-
+    $tel = $_POST['tel']
     /// Datos para el correo
     // $destinatario ="mantovanimariano@transfil.com.ar";
     $destinatario ="luandrada12@live.com";
@@ -19,6 +19,7 @@
 
     $carta = "De: $nombre \n";
     $carta .= "Email: $email \n";
+    $carta .= "Tel.: $tel \n";
     $carta .= "Mensaje: $mensaje \n";
 
     ///// Enviando mensaje

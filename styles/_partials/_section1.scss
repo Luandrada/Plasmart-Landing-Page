@@ -23,11 +23,8 @@
                     background-size: cover;
                     .bg{
                         width: 100%;
-                        height: 100%;
-                        // background-color:#442211a8;
-                        // background-color: rgba(0, 0, 0, 0.534);                        
+                        height: 100%;                      
                         color: black;
-                        // color: white;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -53,15 +50,27 @@
                                 color: $color-dorado;
                            
                             }
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                &:visited{
+                                    text-decoration: none;
+                                }
+                                &:link{
+                                    text-decoration: none;
+                                }
+                                &:hover{
+                                    cursor: pointer;
+                                    color: $color-dorado;
+                               
+                                }
+                            }
                         }
                     }
-                   
                 }
                 #img1{
                     background-image: url(../img/pergolas/pergola3.jpg);
                     background-position: 0 60%;
-                    // animation-name: imgEntrada;
-                    // animation-duration: 2s;
                 }
                 #img2{
                     background-image: url(../img/disenos/20200908_093325.jpg);
@@ -70,8 +79,8 @@
                     // animation-duration: 1.5s;
                 }
                 #img3{
-                    background-image: url(../img/chapa-gruesa/chapa3.jpg) !important;
-                    background-image: url(../img/otros/oxi.jpg);
+                    background-image: url(../img/chapa-gruesa/chapa3.png) !important;
+         
                     background-position: 50% 5%;
                     // animation-name: imgEntrada;
                     // animation-duration: 0.9s;

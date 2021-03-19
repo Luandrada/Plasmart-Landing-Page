@@ -407,6 +407,24 @@ header .nav-cont .menu li .underline {
   color: #dc9e40;
 }
 
+.sec-productos .contenedor .renglon .tarjeta .img .bg p a {
+  text-decoration: none;
+  color: black;
+}
+
+.sec-productos .contenedor .renglon .tarjeta .img .bg p a:visited {
+  text-decoration: none;
+}
+
+.sec-productos .contenedor .renglon .tarjeta .img .bg p a:link {
+  text-decoration: none;
+}
+
+.sec-productos .contenedor .renglon .tarjeta .img .bg p a:hover {
+  cursor: pointer;
+  color: #dc9e40;
+}
+
 .sec-productos .contenedor .renglon .tarjeta #img1 {
   background-image: url(../img/pergolas/pergola3.jpg);
   background-position: 0 60%;
@@ -418,8 +436,7 @@ header .nav-cont .menu li .underline {
 }
 
 .sec-productos .contenedor .renglon .tarjeta #img3 {
-  background-image: url(../img/chapa-gruesa/chapa3.jpg) !important;
-  background-image: url(../img/otros/oxi.jpg);
+  background-image: url(../img/chapa-gruesa/chapa3.png) !important;
   background-position: 50% 5%;
 }
 
@@ -1070,7 +1087,7 @@ header .nav-cont .menu li .underline {
 }
 
 .sec-contacto-ubic .parallax {
-  background-image: url("../img/industria.jpg");
+  background-image: url("../img/industria.png");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;

@@ -94,7 +94,7 @@
     .bg-galeria{
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.87);
+        background-color: rgba(0, 0, 0, 0.94);
         position: fixed;
         top: 0;
         left: 0;
@@ -217,6 +217,57 @@
     }
     
 }
+
+
+.nav-redes-galeria{
+    display: none;
+        width: 100px;
+        margin-top: 5px;
+        margin-right: 5px;
+}
+.nav-redes-galeria .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-redes-galeria .icons.fab{
+    color: #dc9e40;;
+    font-size: 1.1em;
+    
+}
+.nav-redes-galeria .icons.fab :hover{
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.9;
+}
+.nav-redes-galeria .icons.fas{
+    color: #dc9e40;;
+    font-size: 1.1em;
+}
+.nav-redes-galeria .icons.fas :hover{
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.9;
+}
+.link{
+    font-family:Poppins,sans-serif ; color: #dc9e40;
+}
+.link :hover{
+    cursor: pointer !important;
+}
+.cont-texto{
+    cursor: default;
+}
+.img-sec{
+    cursor: pointer;
+}
+#tit-galeria{
+    cursor: default;
+}
+.fa-times{
+    cursor: pointer;
+}
 @keyframes imgEntrada{
     0%{
         transform: translateX(-1700px);
@@ -306,7 +357,7 @@
                             margin-bottom: 0;
                             margin-top: 2vh;
                             .cont-texto{
-                                padding: 5px 10px 10px 5px;
+                                padding: 5px 10px 5px 5px;
                                 height: fit-content;
                                 width: 85%;
                                 margin-left: auto;
@@ -378,7 +429,7 @@
         left: 0;
         display: none;
         .container1{
-            max-height: 780px;
+            max-height: 900px;
             .encabezado-galeria{
                 margin-top: 30px;
                 width: 86%;
@@ -411,7 +462,7 @@
                         .cont-texto{
                             border: 1px solid $color-sec-marron;
                             border-radius: 8px;
-                            padding: 35px 25px 30px 25px;
+                            padding: 10px 20px 10px 20px !important;
                             height: fit-content;
                             p{
                                 color: rgba(255, 255, 255, 0.76);

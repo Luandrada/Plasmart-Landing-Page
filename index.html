@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <meta name="description"
-        content="Trabajos artísticos en chapa para uso arquitectónico o decorativo. Productos estandar y a medida. Chapa calada en variados diseños.Córdoba, Argentina.">
-    <meta name="keywords" content="chapa">
-    <meta name="keywords" content="chapa calada">
-    <meta name="keywords" content="diseños en chapa">
-    <meta name="keywords" content="chapa calada artistica">
+        content="Personalizá tu espacio | Corte y plegado de chapa para arquitectura, decoración y construcción.">
+    <meta name="keywords" content="chapa , cordoba , chapa calada , diseños en chapa, chapa calada artistica">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
     <!-- Styles CSS -->
@@ -32,6 +29,18 @@
 
     <title>Plasmart - Personalizá tu espacio</title>
     <link rel="shortcut icon" href="img/ultimo.ico" type="image/x-icon">
+
+    <!-- SCRIPT GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N28BP135M4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N28BP135M4');
+    </script>
+
 </head>
 
 <body>
@@ -42,8 +51,8 @@
                 <a class="logo" style="margin-left: 40px; margin-top: 45px;" href="">
                     <img id="logo1" src="img/logos/logoeditado.png" width="200px" height="55px" alt="">
                 </a>
-                <div class="cont-icon-menu d-flex ">
-                    <i class="fas fa-shopping-cart d-md-none"></i>
+                <div class="cont-icon-menu d-flex  align-items-center">
+                   <a href="msje-en-construccion.html" style="text-decoration: none;"><i class="fas fa-shopping-cart d-md-none"></i></a> 
                     <i class="fas fa-bars  d-md-none" id="menu" onClick="abrirMenu()"></i>
                     <i class="fas fa-times " id="close" onClick="cerrarMenu()"></i>
 
@@ -59,7 +68,7 @@
                         <a href="https://www.facebook.com/plasmartCba" target="_blank"><i
                                 class="fab fa-facebook-square"></i></a>
                         <a href="https://api.whatsapp.com/send?phone=5493513264597"><i class="fab fa-whatsapp"></i></a>
-                        <a href="mailto:f.mantovani@transfil.com.ar" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:contacto@plasmartcba.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -85,6 +94,7 @@
     <!-- FIN HEADER -->
     <!-- SECCION PRODUCTOS -->
     <section class="sec-productos container-fluid" id="productos">
+        <h1 style="position: absolute; visibility: hidden;">Personalizá tu espacio | Corte y plegado de chapa para arquitectura, decoración y construcción.</h1>
         <div class="contenedor">
             <div class="row renglon">
                 <div class="col-md-4 tarjeta" data-aos="fade-right" data-aos-duration="2000">
@@ -135,9 +145,25 @@
                         </div>
                         <div class=" col col-md-6 right d-flex flex-column">
                             <div class="row  top">
-                                <div class="cont-texto">
+                                <div class="cont-texto" id="cont-t">
                                     <p id="texto-galeria"></p>
-                                    <a href="" id="enlace-galeria"></a>
+                                    <span id="enlace-galeria" class="link" onClick="mostrarContacto()"  ></span>
+                                    <div class="nav-redes-galeria" id="iconos-c"  >
+                                        <div class="icons">
+            
+                                            <a href="https://www.instagram.com/plasmart_cba/" target="_blank" data-aos="fade-down-right" data-aos-duration="1800"><i
+                                                    class="fab fa-instagram"></i></a>
+            
+            
+                                            <a href="https://www.facebook.com/plasmartCba" target="_blank" data-aos="fade-down-right" data-aos-duration="1300"><i
+                                                    class="fab fa-facebook-square" ></i></a>
+                                            <a href="https://api.whatsapp.com/send?phone=5493513264597"data-aos="fade-down-right"  data-aos-duration="900"><i
+                                                    class="fab fa-whatsapp" ></i></a>
+                                            <a href="mailto:contacto@plasmartcba.com" target="_blank"" target="_blank" data-aos="fade-down-right"><i class="fas fa-envelope"></i></a>
+                                        </div>
+            
+                                    </div>
+                                    <!-- <a href="msje-en-construccion.html" class="" id="enlace-galeria-link">¡Visitá nuestro e-shop!</a> -->
                                 </div>
                             </div>
                             <div class="row order-1 order-md-2 bottom  ">
@@ -208,7 +234,7 @@
                                     class="fab fa-facebook-square"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=5493513264597"><i
                                     class="fab fa-whatsapp"></i></a>
-                            <a href="mailto:f.mantovani@transfil.com.ar" target="_blank"" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:contacto@plasmartcba.com" target="_blank"" target="_blank"><i class="fas fa-envelope"></i></a>
                         </div>
 
                     </div>
@@ -216,7 +242,7 @@
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center right">
 
                     <div class="row cont-img-tec"  data-aos="fade-left" data-aos-duration="1000">
-                        <img src="img/otros/plasma.png" alt="" loading="lazy">
+                        <img src="img/disenos/di2.webp" alt="" loading="lazy">
                         <div class="frame-img">
 
                         </div>
@@ -264,9 +290,7 @@
                             </div>
                             <div class="item">
                                 <i class="fas fa-envelope"></i>
-                                <p class="d-none d-sm-block">f.mantovani@transfil.com.ar</p>
-                                <p class="d-block d-sm-none">f.mantovani<br> @transfil.com.ar</p>
-
+                                <p class="">contacto@plasmartcba.com</p>
                             </div>
 
                             <div class="item">
@@ -288,7 +312,7 @@
                                         class="fab fa-facebook-square" ></i></a>
                                 <a href="https://api.whatsapp.com/send?phone=5493513264597"data-aos="fade-down-right"  data-aos-duration="900"><i
                                         class="fab fa-whatsapp" ></i></a>
-                                <a href="mailto:f.mantovani@transfil.com.ar" target="_blank"" target="_blank" data-aos="fade-down-right"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:contacto@plasmartcba.com" target="_blank"" target="_blank" data-aos="fade-down-right"><i class="fas fa-envelope"></i></a>
                             </div>
 
                         </div>
@@ -300,7 +324,7 @@
                     </div>
 
                 </div>
-                <div class="order-1 order-md-2 col-12 col-md-7 col-lg-7 contacto-der">
+                <div class="order-1 order-md-2 col-12 col-md-7 col-lg-7 contacto-der" >
                     <div class="right-c " style="  text-align: left; ">
                         <div class="row  ">
                             <div class="col-md-12">

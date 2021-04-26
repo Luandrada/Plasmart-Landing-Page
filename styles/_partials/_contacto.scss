@@ -245,11 +245,13 @@
     .sec-contacto-ubic{
         .parallax{
         align-items: center;
+   
+         background-image:url('../img/industriachica.png');
         justify-content: center;
         .info-parallax{
             width: 100%;
             max-width: 500px;
-            height: 65%;
+            height: 75%;
             margin-left: 0;
             .texto-visitanos{
                 h3{

@@ -37,27 +37,30 @@ function abrirGaleria(id){
             enlace.innerText="¡Contáctanos!";
             enlace.setAttribute('href','link');
             galeria=1;
-            img1.style.backgroundImage="url(../img/pergolas/pergola5.png)";
-            img2.style.backgroundImage="url(../img/pergolas/pergola5.png)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola5.webp)";
+            img2.style.backgroundImage="url(../img/pergolas/pergola5.webp)";
             img2.style.backgroundPosition= "50% 20%"
-            img3.style.backgroundImage="url(../img/pergolas/pergola4.png)";
-            img4.style.backgroundImage="url(../img/frentes/frentee.png)";
-            img5.style.backgroundImage="url(../img/barandas/baranda1.png)";
+            img3.style.backgroundImage="url(../img/pergolas/pergola4.webp)";
+            img4.style.backgroundImage="url(../img/frentes/frentee.webp)";
+            img5.style.backgroundImage="url(../img/barandas/baranda1.webp)";
 
 
         }
         if (id==2) {
             titulo.innerText="DISEÑO";
             texto.innerHTML = "Conocé nuestra moderna línea de productos especializados en chapa.<br>Decoración, mobiliario, ornamentos para el jardín y mucho más.  "
-            enlace.innerText="¡Visitá nuestro e-shop!";
-            enlace.setAttribute('href','link');
+            let link= document.createElement("a")
+            link.setAttribute("href", "https://tienda.plasmartcba.com");
+            link.innerText="¡Visitá nuestro e-shop!";
+            enlace.innerText="";
+            enlace.appendChild(link);
             galeria=2;
-            img1.style.backgroundImage="url(../img/disenos/di2.png)";
-            img2.style.backgroundImage="url(../img/disenos/di1.png)";
+            img1.style.backgroundImage="url(../img/disenos/di2.webp)";
+            img2.style.backgroundImage="url(../img/disenos/di1.webp)";
             img2.style.backgroundPosition= "50% 78%";
-            img3.style.backgroundImage="url(../img/panos/planoblanco.png)";
-            img4.style.backgroundImage="url(../img/carteleria/tigre.png)";
-            img5.style.backgroundImage="url(../img/disenos/diseno.png)";
+            img3.style.backgroundImage="url(../img/panos/planoblanco.webp)";
+            img4.style.backgroundImage="url(../img/carteleria/tigre.webp)";
+            img5.style.backgroundImage="url(../img/disenos/diseno.webp)";
        
         }
         if (id==3) {
@@ -65,72 +68,78 @@ function abrirGaleria(id){
             texto.innerHTML = "Servicios de corte y plegado de chapa para aplicaciónes estructurales e industriales.<br> Atención personalizada."
             enlace.innerText="¡Contáctese ahora!";
             galeria=3;
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa3.png)";
-            img2.style.backgroundImage="url(../img/chapa-gruesa/chapa1.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa3.webp)";
+            img2.style.backgroundImage="url(../img/chapa-gruesa/chapa1.webp)";
             img2.style.backgroundPosition= "50% 25%";
-            img3.style.backgroundImage="url(../img/chapa-gruesa/chapa2.png)";
-            img4.style.backgroundImage="url(../img/otros/Trabajoartesanal.png)";
-            img5.style.backgroundImage="url(../img/chapa-gruesa/chapa.png)";
+            img3.style.backgroundImage="url(../img/chapa-gruesa/chapa2.webp)";
+            img4.style.backgroundImage="url(../img/otros/Trabajoartesanal.webp)";
+            img5.style.backgroundImage="url(../img/chapa-gruesa/chapa.webp)";
 
         }
 }
 function cerrarGaleria() {
     document.getElementById("bg-galeria").style.display="none"
-
+    document.getElementById("iconos-c").style.display="none";
+    document.getElementById("cont-t").style.paddingBottom="20px"
 }
 function cambiarImagen(id) {
     if (id==2) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/pergolas/pergola5.png)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola5.webp)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/disenos/di1.png)";
+            img1.style.backgroundImage="url(../img/disenos/di1.webp)";
 
 
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa1.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa1.webp)";
 
         }
     }
     if (id==3) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/pergolas/pergola4.png)";
+            img1.style.backgroundImage="url(../img/pergolas/pergola4.webp)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/panos/planoblanco.png)";
+            img1.style.backgroundImage="url(../img/panos/planoblanco.webp)";
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa2.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa2.webp)";
         }
     }
     if (id==4) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/frentes/frentee.png)";
+            img1.style.backgroundImage="url(../img/frentes/frentee.webp)";
         };
         if (galeria==2) {
-            img1.style.backgroundImage="url(../img/carteleria/tigre.png)";
+            img1.style.backgroundImage="url(../img/carteleria/tigre.webp)";
             
         }
         if (galeria==3) {
-            img1.style.backgroundImage='url(../img/otros/Trabajoartesanal.png)'
+            img1.style.backgroundImage='url(../img/otros/Trabajoartesanal.webp)'
         }
     }
     if (id==5) {
         if (galeria==1) {
-            img1.style.backgroundImage="url(../img/barandas/baranda1.png)";
+            img1.style.backgroundImage="url(../img/barandas/baranda1.webp)";
         };
         if (galeria==2) {
             
-            img1.style.backgroundImage="url(../img/disenos/diseno.png)";
+            img1.style.backgroundImage="url(../img/disenos/diseno.webp)";
 
         }
         if (galeria==3) {
-            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa.png)";
+            img1.style.backgroundImage="url(../img/chapa-gruesa/chapa.webp)";
 
         }
     }
     
+}
+
+function mostrarContacto(){
+    document.getElementById("iconos-c").style.display="block";
+    document.getElementById("cont-t").style.paddingBottom="9px"
 }
 //**FIN GALERIA DE IMAGENES */
 
